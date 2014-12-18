@@ -1,0 +1,16 @@
+{
+  "name": "fs-concatenate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amanvirk <virk.officials@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lineup": "0.0.5",
+    "nut-cli": "0.0.2",
+    "recursive-readdir": "^1.2.0"
+  }
+}
