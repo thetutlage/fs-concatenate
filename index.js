@@ -15,19 +15,8 @@ var commands = nut.parse();
 if(commands['-i'] && commands['-o']){
   var input = commands["-i"];
   var output = commands["-o"];
-
-  if(path.resolve(input) !== path.normalize(input)){
-    input = path.join(process.cwd(),input);
-  }
-  if(path.resolve(output) !== path.normalize(output)){
-    output = path.join(process.cwd(),output);
-  }
   concatenator.concatenate(input,[],output);
-
 }else{
   lineup.log.error("Enter input directory and output path");
   process.exit(1);
 }
-
-var m = require('./modules.js');
-console.log(Object.keys(m));
